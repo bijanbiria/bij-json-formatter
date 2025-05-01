@@ -1,0 +1,22 @@
+services:
+  bij_json_formatter:
+    build:
+      context: .
+    container_name: bij_json_formatter
+    restart: always
+    expose:
+      - "3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bij_json_formatter.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.bij_json_formatter.entrypoints=websecure"
+      - "traefik.http.routers.bij_json_formatter.tls=true"
+      - "traefik.http.services.bij_json_formatter.loadbalancer.server.port=3000"
+    networks:
+      - your_network_name
+    env_file:
+      - .env
+
+networks:
+  your_network_name:
+    external: true
