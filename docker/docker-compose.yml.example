@@ -1,7 +1,8 @@
 services:
   bij_json_formatter:
     build:
-      context: .
+      context: ../
+      dockerfile: docker/Dockerfile
     container_name: bij_json_formatter
     restart: always
     expose:
