@@ -98,5 +98,5 @@ This project is licensed under the **MIT License** — feel free to use, fork, a
 
 ---
 
-Made with ❤️ by [Your Name](https://bijanbiria.com)
+Made with ❤️ by [Bijan Biria](https://bijanbiria.com)
 

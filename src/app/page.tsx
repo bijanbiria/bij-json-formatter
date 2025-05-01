@@ -110,6 +110,18 @@ export default function HomePage() {
 
                 </div>
             </div>
+
+            <footer className="mt-16 pt-8 border-t border-gray-300 dark:border-gray-700 text-sm text-center text-gray-600 dark:text-gray-400">
+                <p>
+                    Made with ❤️ by <a href="https://bijanbiria.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">Bijan Biria</a>
+                </p>
+                <p className="mt-2">
+                    Open-source on <a href="https://github.com/bijanbiria/bij-json-formatter" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">GitHub</a>
+                </p>
+                <p className="mt-2">
+                    © {new Date().getFullYear()} json.bij.app — Open source under the MIT License.
+                </p>
+            </footer>
         </main>
     )
 }
