@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic'
 import {useState} from 'react'
 import {formatJSON, minifyJSON} from '@/utils/jsonUtils'
-import ReactJson from "react-json-view";
 
 export default function HomePage() {
     const [input, setInput] = useState('')
