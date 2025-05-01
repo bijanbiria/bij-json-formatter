@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'Online JSON Formatter & Validator | bij.json.app',
+    title: 'Online JSON Formatter & Validator | json.bij.app',
     description:
         'Free online tool to format, minify, and validate your JSON data instantly. Built with Next.js and Tailwind CSS. Open-source and easy to use.',
     keywords: [
@@ -24,23 +24,23 @@ export const metadata: Metadata = {
         'Beautify JSON',
         'Open Source JSON tool',
         'Free JSON viewer',
-        'bij.json.app',
+        'json.bij.app',
     ],
     authors: [{ name: 'Bijan Biria', url: 'https://bijanbiria.com' }],
     creator: 'Bijan Biria',
     metadataBase: new URL('https://json.bij.app'),
     openGraph: {
-        title: 'Online JSON Formatter | bij.json.app',
+        title: 'Online JSON Formatter | json.bij.app',
         description:
             'Format, minify, and validate JSON instantly. Free, fast and open-source.',
         url: 'https://json.bij.app',
-        siteName: 'bij.json.app',
+        siteName: 'json.bij.app',
         locale: 'en_US',
         type: 'website',
     },
     twitter: {
         card: 'summary',
-        title: 'Online JSON Formatter | bij.json.app',
+        title: 'Online JSON Formatter | json.bij.app',
         description: 'Format, minify, and validate your JSON for free.',
         creator: '@bijanbiria',
     },
