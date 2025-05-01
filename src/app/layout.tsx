@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import GoogleAnalyticsClient from "@/components/GoogleAnalyticsClient";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
         'Free JSON viewer',
         'json.bij.app',
     ],
-    authors: [{ name: 'Bijan Biria', url: 'https://bijanbiria.com' }],
+    authors: [{name: 'Bijan Biria', url: 'https://bijanbiria.com'}],
     creator: 'Bijan Biria',
     metadataBase: new URL('https://json.bij.app'),
     openGraph: {
@@ -45,9 +46,9 @@ export const metadata: Metadata = {
         creator: '@bijanbiria',
     },
     icons: {
-        icon:  [
-            { url: '/android-icon-36x36.png', sizes: '36x36', type: 'image/png' },
-            { url: '/android-icon-48x48.png', sizes: '48x48', type: 'image/png' },
+        icon: [
+            {url: '/android-icon-36x36.png', sizes: '36x36', type: 'image/png'},
+            {url: '/android-icon-48x48.png', sizes: '48x48', type: 'image/png'},
         ],
         shortcut: '/android-icon-96x96.png',
         apple: '/android-icon-144x144.png',
@@ -60,17 +61,19 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    return (
+        <html lang="en">
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+        <GoogleAnalyticsClient />
+
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
